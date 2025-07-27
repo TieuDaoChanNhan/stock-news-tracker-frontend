@@ -8,11 +8,11 @@ class Config {
   static String get baseUrl {
     switch (_environment) {
       case Environment.development:
-        return "https://stock-news-tracker-production.up.railway.app/api/v1";
+        return "http://stock-news.local:8082/api/v1";
       case Environment.staging:
-        return "https://stock-news-tracker-production.up.railway.app/api/v1";
+        return "http://stock-news.local:8082/api/v1";
       case Environment.production:
-        return "https://stock-news-tracker-production.up.railway.app/api/v1";
+        return "http://stock-news.local:8082/api/v1";
     }
   }
 

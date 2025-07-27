@@ -48,7 +48,7 @@ dependencies:
   fl_chart: ^0.68.0
   
   # Utilities
-  intl: ^0.19.0 # Để format ngày tháng
+  intl: ^0.20.2
   google_fonts: ^6.2.1 # Font chữ đẹp hơn
   url_launcher: ^6.3.1
   shared_preferences: ^2.5.3

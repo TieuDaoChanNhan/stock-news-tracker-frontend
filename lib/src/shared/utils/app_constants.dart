@@ -1,17 +1,14 @@
 class AppConstants {
   static const String appName = 'Stock News Tracking System';
   
-  // ✅ SỬA: Sử dụng Railway URL
-  static const String baseUrl = 'http://stock-news.local:8081/api/v1';
-  
-  // ✅ THÊM: Fallback URL cho development
-  static const String devBaseUrl = 'http://localhost:8000/api/v1';
-  
-  // ✅ THÊM: Method để get correct URL based on environment
+  static const String baseUrl = 'http://stock-news.local:8082/api/v1';
+
+  static const String devBaseUrl = 'http://stock-news.local:8082/api/v1';
+
   static String get apiBaseUrl {
     const bool isProduction = bool.fromEnvironment('dart.vm.product');
     return isProduction ? baseUrl : devBaseUrl;
-  }
+  } 
   
   // User ID cố định (như backend)
   static const String userId = 'ong_x';
